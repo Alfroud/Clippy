@@ -6,7 +6,7 @@ It is a native C++ Win32 app for Windows 10/11 x64. It has no Qt or Chrome exten
 
 ## Download
 
-The ready-to-run `Clippy.exe` is distributed as an asset on the latest GitHub Release. Download it from the repository's **Releases** page and run it on Windows 10 or 11 x64. Open Chrome and sign in to ChatGPT before using a capture shortcut.
+Download the latest ready-to-run [Clippy.exe](https://github.com/Alfroud/clippy/releases/latest/download/Clippy.exe) and run it on Windows 10 or 11 x64. Open Chrome and sign in to ChatGPT before using a capture shortcut. Release notes and older versions are available on the repository's [Releases page](https://github.com/Alfroud/clippy/releases).
 
 The GitHub repository contains the source code and build scripts. If no release has been published yet, build the executable locally by following the [Build and check](#build-and-check) instructions below.
 
