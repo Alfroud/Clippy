@@ -6,7 +6,9 @@ It is a native C++ Win32 app for Windows 10/11 x64. It has no Qt or Chrome exten
 
 ## Download
 
-Download `Clippy.exe` from the latest GitHub Release and run it on Windows 10 or 11 x64. Open Chrome and sign in to ChatGPT before using a capture shortcut. The repository contains the source code; the compiled executable is distributed as a release asset.
+The ready-to-run `Clippy.exe` is distributed as an asset on the latest GitHub Release. Download it from the repository's **Releases** page and run it on Windows 10 or 11 x64. Open Chrome and sign in to ChatGPT before using a capture shortcut.
+
+The GitHub repository contains the source code and build scripts. If no release has been published yet, build the executable locally by following the [Build and check](#build-and-check) instructions below.
 
 ## Use
 
@@ -47,6 +49,8 @@ From this folder in PowerShell:
 .\build.ps1
 .\test.ps1
 ```
+
+`setup-toolchain.ps1` downloads the portable LLVM-MinGW compiler into `.tools`; it does not install C++ system-wide. `build.ps1` then compiles the C++ source into `dist\Clippy.exe`. The compiler and generated executable are intentionally excluded from Git with `.gitignore`.
 
 Setup downloads the pinned LLVM-MinGW x64 toolchain into `.tools` and verifies its SHA-256 checksum. The build writes `dist\Clippy.exe`. You can also pass a compatible compiler to `build.ps1 -Compiler <path-to-clang++.exe>`.
 
